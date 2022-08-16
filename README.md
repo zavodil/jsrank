@@ -7,6 +7,8 @@ The user's solution is uploaded into the smart contract and run several times wi
 
 User receives an NFT after solving any challenge, NFT shows actual Web3 JsRank for given user.
 
+DEMO: https://js.nearspace.info
+
 How to build
 ====================================================
 
