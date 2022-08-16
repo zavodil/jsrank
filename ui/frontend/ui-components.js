@@ -11,15 +11,18 @@ export function SignInPrompt({greeting}) {
          Try to solve as many Javascript challenges as possible.
          You will receive an NFT after solving any challenge, NFT will show your actual Web3 JsRank!
       </p>
-      <p>
-        Do not worry, this app runs in the test network ("testnet"). It works
-        just like the main network ("mainnet"), but using NEAR Tokens that are
-        only for testing!
-      </p>
-      <br/>
-      <p style={{ textAlign: 'center' }}>
-        <button onClick={signInWithNearWallet}>Sign in with NEAR Wallet</button>
-      </p>
+        <p style={{ textAlign: 'center' }}>
+            <button onClick={signInWithNearWallet}>Sign in with NEAR Wallet</button>
+        </p>
+      <div>
+          <strong>Useful Links:</strong>
+          <ul className={"links"}>
+              <li>Sourcecode: <a href={"https://github.com/zavodil/jsrank"}>github</a>.</li>
+              <li><a href={"http://near.ai/javascript"}>NEAR-SDK-JS</a></li>
+              <li><a href={"http://near.dev"}>NEAR Examples</a></li>
+              <li><a href={"http://near.chat"}>NEAR Discord</a></li>
+          </ul>
+      </div>
     </main>
   );
 }

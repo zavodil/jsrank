@@ -2,7 +2,8 @@ const near = require("./near");
 const {getConfig} = require("./frontend/near-config");
 const fs = require("fs");
 
-const nearConfig = getConfig(process.env.NODE_ENV || "development");
+const owner_id = "jsrank.near";
+const nearConfig = getConfig(process.env.NODE_ENV || "mainnet");
 
 async function loadTask(filename) {
     return fs.readFileSync(`./tasks/${filename}.txt`, 'utf8');
@@ -12,7 +13,7 @@ function addTask(category_id, taskName, parameters, tests) {
     loadTask(taskName)
         .then(async content => {
             const resp = await near.NearCall(
-                nearConfig.contractName,
+                owner_id,
                 nearConfig.contractName,
                 "add_task",
                 {

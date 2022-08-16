@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || "dev-1660655157595-34155214152489";
+const CONTRACT_NAME = process.env.CONTRACT_NAME || "contract.jsrank.near";
 
 module.exports = {
     getConfig: (env) => {

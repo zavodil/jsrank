@@ -6,7 +6,7 @@
     "start": "cd frontend && npm run start",
     "deploy": "npm run build:contract && cd contract && near dev-deploy --wasmFile ./target/wasm32-unknown-unknown/release/hello_near.wasm",
     "build": "npm run build:contract && npm run build:web",
-    "build:web": "cd frontend && npm run build",
+    "build:web": "export NODE_ENV=mainnet && cd frontend && npm run build",
     "build:contract": "cd contract && rustup target add wasm32-unknown-unknown && cargo build --all --target wasm32-unknown-unknown --release",
     "test": "npm run test:unit && npm run test:integration",
     "test:unit": "cd contract && cargo test",

@@ -324,6 +324,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "contract"
+version = "0.1.0"
+dependencies = [
+ "bindgen",
+ "near-contract-standards",
+ "near-sdk",
+]
+
+[[package]]
 name = "convert_case"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1007,15 +1016,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ec757218438d5fda206afc041538b2f6d889286160d649a86a24d37e1235afd1"
 dependencies = [
  "unicode-xid",
-]
-
-[[package]]
-name = "quickjs-rust-near"
-version = "0.1.0"
-dependencies = [
- "bindgen",
- "near-contract-standards",
- "near-sdk",
 ]
 
 [[package]]

@@ -318,6 +318,14 @@ html, body, .container, main, #root {
   animation: anim 2s infinite;
 }
 
+.links li {
+  padding-bottom: 0.2em;
+}
+
+.links {
+  margin-top: 0;
+}
+
 @keyframes anim {
   0% {
     x: 111.416;
