@@ -24,9 +24,9 @@
 
 <p><strong>Function Description</strong>  </p>
 
-<p>Complete the <em>countingValleys</em> function in the editor below.  </p>
+<p>Complete the <em>getResult</em> function in the editor.  </p>
 
-<p>countingValleys has the following parameter(s):  </p>
+<p>getResult has the following parameter(s):  </p>
 
 <ul>
 <li><em>int steps</em>: the number of steps on the hike  </li>

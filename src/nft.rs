@@ -53,7 +53,7 @@ impl NonFungibleTokenMetadataProvider for Contract {
 pub fn get_default_meta() -> NFTContractMetadata {
     NFTContractMetadata {
         spec: NFT_METADATA_SPEC.to_string(),
-        name: "Javascript Hackerrank NFT".to_string(),
+        name: "NEAR JsRank NFT".to_string(),
         symbol: "Hackerrank".to_string(),
         icon: Some(DATA_IMAGE_SVG_NEAR_ICON.to_string()),
         base_uri: None,
@@ -64,8 +64,8 @@ pub fn get_default_meta() -> NFTContractMetadata {
 
 pub fn internal_get_token_metadata(points: Point) -> Option<TokenMetadata> {
     Some(TokenMetadata {
-        title: Some("Javascript Hackerrank NFT".to_string()),
-        description: Some(format!("{} tasks solved", points)),
+        title: Some("NEAR JsRank NFT".to_string()),
+        description: Some(format!("{} challenges solved", points)),
         media: Some(get_media(points.to_string())),
         media_hash: None,
         copies: None,

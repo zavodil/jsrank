@@ -16,9 +16,9 @@
 
 <p><strong>Function Description</strong>  </p>
 
-<p>Complete the <em>repeatedString</em> function in the editor below.  </p>
+<p>Complete the <em>getResult</em> function in the editor.  </p>
 
-<p>repeatedString has the following parameter(s):  </p>
+<p>getResult has the following parameter(s):  </p>
 
 <ul>
 <li><em>s:</em> a string to repeat  </li>

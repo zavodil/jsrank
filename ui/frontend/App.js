@@ -16,7 +16,7 @@ import 'prismjs/components/prism-javascript';
 import 'prismjs/themes/prism.css'; //Example style, you can use another
 
 const codeHeaderTemplate = `/*
- * Complete the 'getResult' function below and return the result.
+ * Complete the 'getResult' function below and return the result. Don't use recursion.
  */
  
  function getResult(%PARAMS%) {
@@ -121,7 +121,7 @@ export default function App() {
 
                     setResult(result
                         ? "Congratulations! You solved this challenge. Would you like to challenge your friends?"
-                        : `${all_tests}/${wrong_tests} test cases failed :(`
+                        : `${wrong_tests}/${all_tests} test cases failed :(`
                     );
                     setWrongTests(wrong_tests);
                 } else {
