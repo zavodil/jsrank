@@ -336,3 +336,7 @@ html, body, .container, main, #root {
     y: 50;
   }
 }
+
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+  background: none!important;
+}
